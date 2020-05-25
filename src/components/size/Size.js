@@ -11,17 +11,17 @@ class Size extends Component {
                         <p>Size: {this.props.size}</p>
                     </div>
                     <div className="sizeBox-body">
-                        <div className="button upSize" 
+                        <button className="button upSize" 
                         onClick={() => this.props.handleUp()}
-                        >Tăng</div>
-                        <div className="button downSize"
+                        >Tăng</button>
+                        <button className="button downSize"
                         onClick={() => this.props.handleDown()}
-                        >Giảm</div>
+                        >Giảm</button>
                     </div>
                 </div>
-                <div className="resetButton"
+                <button className="resetButton"
                 onClick={() => this.props.handleReset()}
-                >Reset</div>
+                >Reset</button>
             </div>
         );
     }
